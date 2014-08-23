@@ -16,7 +16,7 @@ class MsgOpener
     
     if detailed_list.search('td').search('img').first['alt'] == '未開封'
      url = detailed_list.search('a')[1]['href']
-     Launchy.open("http://#{@domain}/#{suffix}")
+     Launchy.open("http://#{@domain}/#{url}")
     end
   end
 
